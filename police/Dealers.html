@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sidebar menu With Sub-menus | Using HTML, CSS & JQuery</title>
+   <link rel="stylesheet" href="Dealers.css">
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/bower_components/bootstrap-horizon/bootstrap-horizon.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+
+   <div class="menu-btn">
+     <i class="fas fa-bars"></i>
+   </div>
+   <div class="side-bar">
+     <div class="close-btn">
+       <i class="fas fa-times"></i>
+     </div>
+     <div class="menu">
+       <div class="item"><a href="#section-dashbord"><i class="fas fa-desktop"></i>Dashboard</a></div>
+
+   <div class="item">
+         <a class="sub-btn"><i class="fa fa-home"></i>Orders<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="#section-add-officer" class="sub-item">Requested Prices</a>
+           <a href="#section-authorized-officers" class="sub-item">Confirmed Orders</a>
+           <a href="#section-reported-accident" class="sub-item">Pending Orders</a>
+           <a href="#section-view-theft-cases-reported" class="sub-item">Cancelled Orders</a>
+           <a href="#section-view-shared-theft-cases" class="sub-item">Purchace Reciepts</a>
+         </div>
+       </div>
+
+       <div class="item">
+         <a class="sub-btn"><i class="fas fa-table"></i>Utilities<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+
+           <a href="#Pay-tolkens" class="Pay-item">Pay Tolkens</a>
+           <a href="#Check-tolken-balance" class="tolken-item">Check Tolken Balance</a>
+           <a href="#update-profile" class="profile-item">Update Profile</a>
+           <a href="#how-to-subscribe" class="Subscribe-item">How to Pay/Subscribe</a>
+         </div>
+       </div>
+
+        <div class="item">
+         <a class="sub-btn"><i class="fa fa-folder"></i>Service Division<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+          <a href="#requested-bookings" class="sub-item">Requested Bookings</a>
+           <a href="#confirmed-bookings" class="sub-item">Confirmed Bookings</a>
+           <a href="#recieved-vehicles" class="sub-item">Recieved Vehicles</a>
+           <a href="#confirmed-Sservice-checklist" class="sub-item">Confirmed Service Checklist</a>
+           <a href="#Serviced-Vehicles" class="sub-item">Serviced Vehicles</a>
+           <a href="#cleared-for-delivery" class="sub-item">Cleared For Delivery</a>
+           <a href="#released-to-customers" class="sub-item">Released to Customers</a>
+
+         </div>
+       </div>
+
+    
+
+     <div class="item">
+         <a class="sub-btn"><i class="fa fa-cogs"></i>Resources<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+          <a href="#enter-resources" class="sub-item">Enter Resources</a>
+          <a href="#manage-resources" class="sub-item">Manage Resources</a>
+           
+         </div>
+       </div>
+
+        <div class="item">
+         <a class="sub-btn"><i class="fas fa-ad"></i></i>Marketing<i class="fas fa-angle-right dropdown"></i></a>
+         <div class="sub-menu">
+           <a href="#post-your-advertisement" class="sub-item">Post Your Advertisement</a>
+           
+         </div>
+         <div class="item">
+         <a class="sub-btn"><i class="fa fa-cogs"></i>Logout<i class="fas fa-angle-right dropdown"></i></a>
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+
+   <!--main-->
+   <section class="main">
+  
+
+    <!--home page-->
+      <div id="section-dashbord" class="tab-content">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+
+
+    <!--Home Page here-->
+
+ 
+
+      <!--Requested Prices-->
+      
+        <div class="media-body">
+      <div id="section-add-officer" class="tab-content" style="background-color:#fff";>
+     <div class="card">
+     <div class="card-body">
+             <h2 class="card-title" style="color: #000">Requested Prices</h2>  
+    </div>
+    </div>
+             <table class="table"> 
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Part Name</th>
+            <th>Part Number</th>
+            <th>quantity</th>
+            <th>Part Condition</th>
+            <th>Chasis Number</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>YOM</th>
+            <th>Phone Number</th>
+            <th>Date</th>
+            <th>Order Number</th>
+            <th>Additional Services</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>AC Clutch</td>
+            <td> N/A</td>
+            <td>2</td>
+            <td>new</td>
+            <td> N/A</td>
+            <td>Toyota</td>
+            <td>Wish</td>
+            <td> 2006</td>
+            <td>0714439088</td>
+            <td>29-06-2019</td>
+            <td> MC183</td>
+            <td>Deliver To Westlands</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>AC Clutch</td>
+            <td> N/A</td>
+            <td>2</td>
+            <td>new</td>
+            <td> N/A</td>
+            <td>Toyota</td>
+            <td>Wish</td>
+            <td> 2006</td>
+            <td>0714439088</td>
+            <td>29-06-2019</td>
+            <td> MC183</td>
+            <td>Deliver To Westlands</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>AC Clutch</td>
+            <td> N/A</td>
+            <td>2</td>
+            <td>new</td>
+            <td> N/A</td>
+            <td>Toyota</td>
+            <td>Wish</td>
+            <td> 2006</td>
+            <td>0714439088</td>
+            <td>29-06-2019</td>
+            <td> MC183</td>
+            <td>Deliver To Westlands</td>
+        </tr>            
+    </tbody>
+</table>
+ </div>
+</div> 
+
+<!--card-->
+
+
+<!--Confirmed Orders-->
+<div id="section-authorized-officers" class="tab-content" style="background-color:#fff";>
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+    
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Confirmed Orders</h2>  
+        </div>
+    </div>
+     <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+             <th>Part Name</th>
+            <th>Phone Number</th>
+            <th>quantity</th>
+            <th>Date</th>
+            <th>Part Price</th>
+            <th>Order Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Plug Spark</td>
+            <td>0792795044</td>
+            <td>3</td>
+            <td>KES 0</td>
+            <td> MC523</td>
+            <td>18-07-2020</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Plug Spark</td>
+            <td>0792795044</td>
+            <td>3</td>
+            <td>KES 0</td>
+            <td> MC523</td>
+            <td>18-07-2020</td>
+        </tr>
+        <tr>
+            <td>3</td>
+             <td>Plug Spark</td>
+            <td>0792795044</td>
+            <td>3</td>
+            <td>KES 0</td>
+            <td> MC523</td>
+            <td>18-07-2020</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+</div>
+<!--card-->
+
+<!--Pending Orders-->
+<div id="section-reported-accident" class="tab-content"style="background-color:#fff"; >
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+    
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Pending Orders</h2>  
+        </div>
+       
+    </div>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Part Name</th>
+            <th>Part Number</th>
+            <th>quantity</th>
+            <th>Part Condition</th>
+            <th>Chasis Number</th>
+            <th>Part Number</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>YOM</th>
+            <th>Part Number</th>
+            <th>Date</th>
+            <th>Order Number</th>
+            <th>Additional Services</th>
+            <th>Note</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td><a href="#" class="btn btn-primary" style="margin-left: 10px;">Accept</a></td>
+           
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td><a href="#" class="btn btn-primary" style="margin-left: 10px;">Accept</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+            <td>9876876</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td><a href="#" class="btn btn-primary" style="margin-left: 10px;">Accept</a></td>
+          
+        </tr>            
+    </tbody>
+</table>
+</div>
+
+</div>
+<!--card-->
+
+<!--Cancelled Orders-->
+<div id="section-view-theft-cases-reported" class="sub-item" style="background-color:#fff"; >
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+  
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Cancelled Orders</h2>  
+        </div>
+    </div>
+
+    <div class="form-outline">
+</div>
+
+     <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Part Name</th>
+            <th>Part Number</th>
+            <th>quantity</th>
+            <th>Part Price</th>
+            <th>Order Number</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Plug Spark</td>
+            <td>0792795044</td>
+            <td>3</td>
+            <td>KES 0</td>
+            <td> MC523</td>
+            <td>18-07-2020</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Plug Spark</td>
+            <td>0792795044</td>
+            <td>3</td>
+            <td>KES 0</td>
+            <td> MC523</td>
+            <td>18-07-2020</td>
+        </tr>
+        <tr>
+            <td>3</td>
+             <td>Plug Spark</td>
+            <td>0792795044</td>
+            <td>3</td>
+            <td>KES 0</td>
+            <td> MC523</td>
+            <td>18-07-2020</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+
+</div>
+ 
+<!--Purchace Reciepts-->
+<div class="container" class="sub-item">
+<div id="section-view-shared-theft-cases"   style="background-color:#fff";>
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+   
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Purchase Receipt</h2>  
+        </div>
+    </div>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Order Number</th>
+            <th>Part Name</th>
+            <th>Amount Paid</th>
+            <th>Account Details</th>
+            <th>Payment Date</th>
+            <th>Transaction Code</th>
+            <th>Mode Of Payment</th>
+            <th>Reg/Vin Number</th>
+            <th>Car Make</th>
+            <th>Model</th>
+            <th>YearOf Manufacture</th>
+            <th>Chasis Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>516</td>
+            <td> Plug Spark</td>
+            <td>KES 130000</td>
+            <td>0798501657</td>
+            <td> 01-07-2020</td>
+            <td>hduytd</td>
+            <td>Airtel</td>
+            <td>KCB 555D</td>
+            <td>357656</td>
+            <td>Toyota</td>
+            <td> Hilux Surf</td>
+            <td>2006</td>
+            <td>9373839</td>
+        </tr>
+        <tr>
+            <td>2</td>
+             <td>516</td>
+            <td> Plug Spark</td>
+            <td>KES 130000</td>
+            <td>0798501657</td>
+            <td> 01-07-2020</td>
+            <td>hduytd</td>
+            <td>Airtel</td>
+            <td>KCB 555D</td>
+            <td>357656</td>
+            <td>Toyota</td>
+            <td> Hilux Surf</td>
+            <td>2006</td>
+            <td>9373839</td>
+        </tr>
+        <tr>
+            <td>3</td>
+             <td>516</td>
+            <td> Plug Spark</td>
+            <td>KES 130000</td>
+            <td>0798501657</td>
+            <td> 01-07-2020</td>
+            <td>hduytd</td>
+            <td>Airtel</td>
+            <td>KCB 555D</td>
+            <td>357656</td>
+            <td>Toyota</td>
+            <td> Hilux Surf</td>
+            <td>2006</td>
+            <td>9373839</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<!--card-->    
+    <!--pay for tolkens here-->
+
+     <div id="Pay-tolkens" class="Pay-item" style="background-color:#fff";>
+   <div class="Pay-tolkens" class="Pay-item">
+           <h2 class="#Pay-item" style="color: #000">Pay Tolkens</h2>  
+         <div class="form-outline">
+  <input type="text" id="typeText" class="form-control" placeholder="Enter Amount" />
+
+<div class="form-outline">
+  <input type="text" id="typeText" class="form-control" placeholder="0732327240" />
+    <a href="#" class="btn btn-primary" style="margin-left: 10px;">Pay</a>
+    
+ 
+   
+ <p style="color: #000; font-size: 18px; margin-left: 10px; line-height: 1.6;">
+      
+  Payments are transacted via M-Pesa
+
+  1. If M-Pesa dialog fails to show then minimizethe mCarFix app, go to your Safaricom sim toolkit and launch it.
+
+  2. On dialog displayed ,enter your pin and proceed with payment.
+
+  3. Or Pay using our M-pesa paybill number 840989,A/C Name : skytptechnologiesltd.
+        
+      
+    </p>
+</div>
+</div> 
+    </div>
+    
+    <!--Check for Tolkens-->
+      <!-- <div id="section-support" class="tab-content" style="background-color:#fff";>
+
+
+<div class="card">
+  <div class="card-body">
+
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Support</h2>  
+        </div>
+    </div>
+    
+    <div class="form-outline">
+  <input name="name"  id="typeText" class="form-control" placeholder="Enter Full Name" />
+</div> 
+<div class="form-outline">
+  <input name="email" id="typeText" class="form-control" placeholder="Enter Email" />
+</div>
+ <div class="form-outline">
+  <textarea name="message" class="form-control" id="comment" placeholder="Message" style="width: 100%;height: 150px;line-height: 150%;resize:vertical;"></textarea>
+</div>
+    <a href="#" class="btn btn-primary" style="margin-left: 20px;">Submit</a>
+  </div>
+</div>-->
+
+
+<!--check tolken ballance-->
+</div>
+ <!--check tolken ballance-->
+  <div id="Check-tolken-balance" class="tolken-item" style="background-color:#fff";>
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+   
+        <div class="media-body">
+           <div class="media-body">
+       <style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px  0 0  ;
+}
+
+.container {
+  padding: 100px 10px;
+}
+</style>
+<h2>Round Card</h2>
+
+<div class="card">
+  
+  <div class="container">
+    
+    <center><h4><b>0</b></h4></p></center>
+    <p style="color: #000; font-size: 18px; margin-left: 100px; line-height: 1.6;">
+      
+  Tolkens</p>
+   <b>How it works</b>
+
+  Tokens are generally represent the amount paid in your Account.100KES Represent 1 Tolken , that is allocated to you. Upon deplition you are required to top-up into your mCarFix Account for youto continue enjoying the service
+        
+      
+    </p>
+  </div>
+</div>
+<!--card-->
+   
+<!--Update Profile-->
+   <div id="update-profile" class="profile-item" style="background-color:#fff";>
+<!--card-->
+<div class="card">
+  <div class="card-body">
+
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Update Profile</h2>  
+        </div>
+    </div>
+    
+ <div class="form-outline">
+   <input type="text" id="tel" class="form-control" placeholder="Enter Phone Number" />
+</div>
+
+  <div style="position:relative; margin: 20px">
+        <a class='btn btn-warning' href='javascript:;'>
+            Upload Image.
+            <input type="file" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file_source" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+        </a>
+        &nbsp;
+        <span class='label label-info' id="upload-file-info"></span>
+  </div>
+
+
+    <a href="#" class="btn btn-primary" style="margin-left: 20px;">Update Details</a>
+  </div>
+</div>
+
+</div>
+<!--card-->
+ 
+    <!--How to Subscribe-->
+     <div id="how-to-subscribe" class="Subscribe-item" style="background-color:#fff";>
+<!--card-->
+<div class="card">
+  <div class="card-body">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">How To Subscribe</h2>  
+        </div>
+        
+    </div>
+    
+ <div class="form-outline">
+   <input type="text" id="tel" class="form-control" placeholder="Enter Phone Number" />
+</div>
+    <a href="#" class="btn btn-primary" style="margin-left: 20px;">Subscribe</a>
+  </div>
+</div>
+
+</div>
+<!--card-->
+<!--Service Division-->
+          
+<!--Requested Bookings here-->
+<div class="container">
+   <div id="requested-bookings" class="sub-item" style="background-color:#fff";>
+<!--card-->
+<div class="card pmd-card" class="authorized-officers">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Requested Bookings</h2> 
+
+    <div class="form-outline">
+</div>
+
+     <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Part Name</th>
+            <th>Part Number</th>
+            <th>quantity</th>
+            <th>Part Condition</th>
+            <th>Chasis Number</th>
+            <th>Part Number</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>YOM</th>
+            <th>Part Number</th>
+            <th>Date</th>
+            <th>Order Number</th>
+            <th>Additional Services</th>
+            <th>Note</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+            <td>9876876</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+
+</div>
+<!--card-->
+        
+    <!--Confirmed Bookings-->
+     <div id="confirmed-bookings" class="sub-item" style="background-color:#fff";>
+<!--card-->
+<div class="container">
+<div class="section-authorized-officers" class="sub-item">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Confirmed Bookings</h2> 
+
+    <div class="form-outline">
+</div>
+
+     <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Part Name</th>
+            <th>Part Number</th>
+            <th>quantity</th>
+            <th>Part Condition</th>
+            <th>Chasis Number</th>
+            <th>Part Number</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>YOM</th>
+            <th>Part Number</th>
+            <th>Date</th>
+            <th>Order Number</th>
+            <th>Additional Services</th>
+            <th>Note</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+            <td>9876876</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!--card-->
+ 
+<!--recieved-vehicles-->
+
+     <div id="recieved-vehicles" class="sub-item" style="background-color:#fff";>
+<!--card-->
+<div class="container">
+<div class="recieved-vehicles" class="sub-item">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Recieved Vehicles</h2> 
+
+    <div class="form-outline">
+</div>
+
+     <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Part Name</th>
+            <th>Part Number</th>
+            <th>quantity</th>
+            <th>Part Condition</th>
+            <th>Chasis Number</th>
+            <th>Part Number</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>YOM</th>
+            <th>Part Number</th>
+            <th>Date</th>
+            <th>Order Number</th>
+            <th>Additional Services</th>
+            <th>Note</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+            <td>9876876</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<!--Confirmed Service Checklist-->
+
+ <div id="confirmed-Sservice-checklist" class="sub-item" style="background-color:#fff";>
+<!--card-->
+<div class="container">
+<div class="confirmed-Sservice-checklist" class="sub-item">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Confirmed Service Checklist</h2> 
+
+    <div class="form-outline">
+  <input type="text" id="typeText" class="form-control" placeholder="Find Nearest Police Station" />
+</div>
+
+     <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Part Name</th>
+            <th>Part Number</th>
+            <th>quantity</th>
+            <th>Part Condition</th>
+            <th>Chasis Number</th>
+            <th>Part Number</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>YOM</th>
+            <th>Part Number</th>
+            <th>Date</th>
+            <th>Order Number</th>
+            <th>Additional Services</th>
+            <th>Note</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+            <td>9876876</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!--Serviced-Vehicles-->
+
+
+ <div id="Serviced-Vehicles" class="sub-item" style="background-color:#fff";>
+<!--card-->
+<div class="container">
+<div class="serviced-vehicles" class="sub-item">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Serviced Vehicles</h2> 
+
+    <div class="form-outline">
+</div>
+
+     <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Part Name</th>
+            <th>Part Number</th>
+            <th>quantity</th>
+            <th>Part Condition</th>
+            <th>Chasis Number</th>
+            <th>Part Number</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>YOM</th>
+            <th>Part Number</th>
+            <th>Date</th>
+            <th>Order Number</th>
+            <th>Additional Services</th>
+            <th>Note</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+            <td>9876876</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!--Cleared For Delivery-->
+<div class="container">
+ <div id="cleared-for-delivery"  style="background-color:#fff";>
+<!--card-->
+<div class="cleared-for-delivery" >
+
+       
+            <h2 class="" style="color: #000">Cleared For Delivery</h2> 
+     <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Car Owner</th>
+            <th>car Registration</th>
+            <th>Car Type</th>
+            <th>Yaer Of Manufacture</th>
+            <th>Car Reg</th>
+            <th>Reg Date</th>
+            <th>Chasis No</th>
+            <th>Car Body</th>
+            <th>Fuel Type</th>
+            <th>Car Color</th>
+            <th>Car Color</th>
+            <th>Gross Weight</th>
+            <th>Engine Number</th>
+            <th>Rating</th>
+              <th>Registered Milleage</th>
+            <th>Updated Millage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Paniel Mwaura</td>
+            <td> KBW 700D</td>
+            <td>Land Rover </td>
+            <td>Range Rover Sport</td>
+            <td> 2016</td>
+            <td>MCF165</td>
+            <td>4-9-2013</td>
+            <td> SALLSAA136A974872</td>
+            <td>Station Wagon</td>
+            <td>Diesel</td>
+            <td> Black</td>
+            <td>N/A</td>
+            <td> 6541654651</td>
+            <td>2720</td>
+             <td> 1000</td>
+            <td>1000</td>
+        </tr>
+        <a href="#" class="btn btn-primary" style="margin-left: 20px;">Release Vehicle</a>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+            <td>357656</td>
+        </tr>
+         <a href="#" class="btn btn-primary" style="margin-left: 20px;">Release Vehicle</a>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+            <td>9876876</td>
+        </tr>    
+        <a href="#" class="btn btn-primary" style="margin-left: 20px;">Release Vehicle</a>        
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!--Resources-->
+
+<!-- Enter Resources-->
+<div class="container">
+ <div id="released-to-customers" class="sub-item" style="background-color:#fff";>
+<!--card-->
+<div class="released-to-customers" class="sub-item">
+    <div class="">
+        <div class="media-body">
+            <h2 class="card-title" style="color: #000">Released to Customer</h2> 
+     <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Part Name</th>
+            <th>Part Number</th>
+            <th>quantity</th>
+            <th>Part Condition</th>
+            <th>Chasis Number</th>
+            <th>Part Number</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>YOM</th>
+            <th>Part Number</th>
+            <th>Date</th>
+            <th>Order Number</th>
+            <th>Additional Services</th>
+            <th>Note</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+            <td>Clark Kent</td>
+            <td> 0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>0792287676</td>
+            <td>357656</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>0792287676</td>
+            <td>9876876</td>
+        </tr>            
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!--Enter Resources-->
+<div class="container">
+<div id="enter-resources" class="sub-item" style="background-color:#fff";>
+<!--card-->
+<div class="enter-resources" class="sub-item">
+            <h2 class="card-title" style="color: #000">Enter Resources</h2>  
+        </div>
+    </div>
+    
+    <div class="form-outline">
+  <input type="text" id="typeText" class="form-control" placeholder="Enter Full Name" />
+</div> 
+<div class="form-outline">
+  <input type="text" id="typeText" class="form-control" placeholder="Enter ID Number/" />
+</div>
+ <div class="form-outline">
+   <input type="text" id="tel" class="form-control" placeholder="Enter Phone Number" />
+</div>
+    <a href="#" class="btn btn-primary" style="margin-left: 10px;">Add Resource</a>
+
+
+<!--card-->
+</div>
+
+<div class="container">
+<div id="manage-resources" class="sub-item" style="background-color:#fff";>
+<!--card-->
+<div class="manage-resources" class="sub-item">
+             <h2 class="card-title" style="color: #000">Manage Resources</h2>  
+        </div> 
+        
+    
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>Full Names</th>
+            <th>ID Number</th>
+            <th>Phone Number</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark Kent</td>
+            <td>357656</td>
+            <td> 0792287676</td>
+            
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John Carter</td>
+            <td>357656</td>
+            <td>0792287676</td>
+            
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter Parker</td>
+            <td>9876876</td>
+            <td>0792287676</td>
+            
+        </tr>            
+    </tbody>
+</table>
+</div>
+</div>
+<!--Marketing = post yoyr adverts-->
+<div class="container">
+<div id="post-your-advertisement" class="sub-item" style="background-color:#fff";>
+ 
+<!--card-->
+<div class="post-your-advertisement" class="sub-item">
+            <h2 class="sub-item" style="color: #000">Post Your Advertisement</h2>  
+        </div>
+
+    
+</div>
+</div>
+
+
+ </body>
+    <script type="text/javascript">
+   $(document).ready(function(){
+     //jquery for toggle sub menus
+     $('.sub-btn').click(function(){
+       $(this).next('.sub-menu').slideToggle();
+       $(this).find('.dropdown').toggleClass('rotate');
+     });
+
+     //jquery for expand and collapse the sidebar
+     $('.menu-btn').click(function(){
+       $('.side-bar').addClass('active');
+       $('.menu-btn').css("visibility", "hidden");
+     });
+
+     $('.close-btn').click(function(){
+       $('.side-bar').removeClass('active');
+       $('.menu-btn').css("visibility", "visible");
+     });
+   });
+   </script>
+</html>
